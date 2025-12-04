@@ -33,9 +33,9 @@ try:
     db = mongo_client['ai_project_db']
     collection = db['summaries']
     mongo_client.admin.command('ping')
-    print("✅ Successfully connected to MongoDB")
+    print(" Successfully connected to MongoDB")
 except Exception as e:
-    print(f"❌ MongoDB Connection Error: {e}")
+    print(f" MongoDB Connection Error: {e}")
 
 
 # 3. AI Configuration - Using smaller, faster model
@@ -49,7 +49,7 @@ hf_client = InferenceClient(
 # 4. Data Models
 class SummaryRequest(BaseModel):
     text: str
-
+5
 
 # --- ENDPOINTS ---
 
